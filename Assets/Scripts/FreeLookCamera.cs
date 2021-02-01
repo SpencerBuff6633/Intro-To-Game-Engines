@@ -15,18 +15,18 @@ public class FreeLookCamera : MonoBehaviour
         // rotation
         if (Input.GetMouseButton(1))
         {
-        Vector3 rotate = Vector3.zero;
-        rotate.y = Input.GetAxis("Mouse X");
-        rotate.x = -Input.GetAxis("Mouse Y");
+            Vector3 rotate = Vector3.zero;
+            rotate.y = Input.GetAxis("Mouse X");
+            rotate.x = -Input.GetAxis("Mouse Y");
 
-        transform.eulerAngles += rotate * sensitivity;
+            transform.eulerAngles += rotate * sensitivity;
 
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
+            //Cursor.lockState = CursorLockMode.Locked;
         }
         else 
         {
-            Cursor.visible = true;
+            //Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
 
